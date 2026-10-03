@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAVRA — Contemporary Indian Clothing</title>
+  <meta name="description" content="AAVRA is a contemporary Indian clothing label exploring the space between heritage and modernity. Thoughtful proportions, tactile fabrics, and details that reveal themselves slowly.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- ═══ Announcement Bar ═══ -->
+  <div class="announcement" role="banner">
+    PRIVATE PREVIEW · AUTUMN / WINTER 2026
+  </div>
+
+  <!-- ═══ Navbar ═══ -->
+  <nav class="navbar navbar--top" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <div class="navbar__left">
+        <button class="navbar__link" data-nav="collections" aria-label="Go to Collections">COLLECTIONS</button>
+        <button class="navbar__link" data-nav="journal" aria-label="Go to Journal">JOURNAL</button>
+        <button class="navbar__link" data-nav="about" aria-label="Go to About">ABOUT</button>
+      </div>
+
+      <a href="#" class="navbar__logo" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" aria-label="AAVRA Home">AAVRA</a>
+
+      <div class="navbar__right">
+        <button class="navbar__icon" id="search-btn" aria-label="Open search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <a href="https://instagram.com/aavra.studio" target="_blank" rel="noopener" class="navbar__icon navbar__link--desktop" aria-label="Instagram" data-social="instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <button class="navbar__icon navbar__hamburger" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 8h18M3 16h18"/></svg>
+        </button>
+        <button class="navbar__link navbar__link--desktop" id="menu-btn-desktop" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">MENU</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══ Hero ═══ -->
+  <section class="hero" id="hero">
+    <div class="hero__image-wrap">
+      <img class="hero__image" src="assets/images/hero-campaign.jpg" alt="AAVRA Autumn Winter 2026 campaign — Indian woman in contemporary beige linen against warm sandstone architecture" fetchpriority="high">
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__label label">AUTUMN / WINTER 2026</p>
+      <h1 class="hero__heading">
+        <span class="line">Form, Fabric,</span>
+        <span class="line">And the Art</span>
+        <span class="line">of Arrival.</span>
+      </h1>
+      <p class="hero__text">A contemporary expression of Indian craftsmanship, shaped into refined silhouettes for the modern wardrobe.</p>
+      <div class="hero__ctas">
+        <button class="btn" id="hero-explore">
+          <span>Explore the Edit</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        <button class="btn btn--ghost" id="hero-story">
+          <span>Our Story</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- ═══ Brand Introduction ═══ -->
+    <section class="brand-intro" id="brand-intro">
+      <div class="container container--narrow">
+        <h2 class="brand-intro__statement reveal">Not Made to Follow.<br>Made to Be Remembered.</h2>
+        <p class="brand-intro__text reveal reveal--delay-2">Rooted in Indian craft and interpreted through a contemporary lens, we create clothing where texture, proportion and detail become the language of personal style.</p>
+      </div>
+    </section>
+
+    <!-- ═══ Collections ═══ -->
+    <section class="collections section section--lg" id="collections">
+      <div class="container">
+        <div class="collections__header">
+          <p class="label section__label reveal">The Edits</p>
+          <h2 class="display-lg section__heading reveal reveal--delay-1">Current Collections</h2>
+        </div>
+
+        <!-- Collection 01 -->
+        <div class="collection-item reveal">
+          <div class="collection-item__image-wrap">
+            <img class="collection-item__image" src="assets/images/collection-quiet-form.jpg" alt="The Quiet Form collection — elegant contemporary Indian clothing" loading="lazy" decoding="async">
+          </div>
+          <div class="collection-item__content">
+            <p class="collection-item__number">01</p>
+            <h3 class="collection-item__title">The Quiet Form</h3>
+            <p class="collection-item__text">Quiet silhouettes. Precise construction. A study in restraint — where every seam holds intention and every fold speaks softly.</p>
+            <button class="collection-item__cta" aria-label="View The Quiet Form collection">
+              VIEW EDIT
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Collection 02 -->
+        <div class="collection-item reveal">
+          <div class="collection-item__image-wrap">
+            <img class="collection-item__image" src="assets/images/collection-monsoon.jpg" alt="Monsoon Light collection — flowing contemporary clothing with monsoon inspiration" loading="lazy" decoding="async">
+          </div>
+          <div class="collection-item__content">
+            <p class="collection-item__number">02</p>
+            <h3 class="collection-item__title">Monsoon Light</h3>
+            <p class="collection-item__text">Fluid movement captured in fabric. Pieces that breathe with the season — layered, flowing, alive with the softness of rain-washed light.</p>
+            <button class="collection-item__cta" aria-label="View Monsoon Light collection">
+              VIEW EDIT
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Collection 03 -->
+        <div class="collection-item reveal">
+          <div class="collection-item__image-wrap">
+            <img class="collection-item__image" src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&q=80" alt="After Dusk collection — sophisticated evening wear" loading="lazy" decoding="async">
+          </div>
+          <div class="collection-item__content">
+            <p class="collection-item__number">03</p>
+            <h3 class="collection-item__title">After Dusk</h3>
+            <p class="collection-item__text">The quiet confidence of evening. Rich textures, deeper tones, and silhouettes that move between structure and ease as the light changes.</p>
+            <button class="collection-item__cta" aria-label="View After Dusk collection">
+              VIEW EDIT
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Journal ═══ -->
+    <section class="journal section section--lg" id="journal">
+      <div class="container">
+        <div class="journal__header">
+          <p class="label section__label reveal">Stories</p>
+          <h2 class="display-lg section__heading reveal reveal--delay-1">The Journal</h2>
+        </div>
+
+        <div class="journal__grid">
+          <!-- Journal 1 -->
+          <article class="journal-card reveal" role="button" tabindex="0" aria-label="Read: The New Indian Silhouette">
+            <div class="journal-card__image-wrap">
+              <img class="journal-card__image" src="https://images.unsplash.com/photo-1612722432474-b971cdcea546?w=600&q=80" alt="The New Indian Silhouette editorial" loading="lazy" decoding="async">
+            </div>
+            <p class="journal-card__category">Editorial</p>
+            <h3 class="journal-card__title">The New Indian Silhouette</h3>
+            <p class="journal-card__excerpt">How contemporary Indian design is redefining shape, proportion and presence in modern clothing.</p>
+            <span class="journal-card__read">
+              READ
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </article>
+
+          <!-- Journal 2 -->
+          <article class="journal-card reveal reveal--delay-1" role="button" tabindex="0" aria-label="Read: Inside the Craft">
+            <div class="journal-card__image-wrap">
+              <img class="journal-card__image" src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=600&q=80" alt="Inside the Craft — artisan at work" loading="lazy" decoding="async">
+            </div>
+            <p class="journal-card__category">Craft</p>
+            <h3 class="journal-card__title">Inside the Craft</h3>
+            <p class="journal-card__excerpt">A glimpse into the hands and hours behind every finished piece — where patience meets precision.</p>
+            <span class="journal-card__read">
+              READ
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </article>
+
+          <!-- Journal 3 -->
+          <article class="journal-card reveal reveal--delay-2" role="button" tabindex="0" aria-label="Read: Dressing Between Seasons">
+            <div class="journal-card__image-wrap">
+              <img class="journal-card__image" src="https://images.unsplash.com/photo-1604176354204-9268737828e4?w=600&q=80" alt="Dressing Between Seasons — transitional wardrobe" loading="lazy" decoding="async">
+            </div>
+            <p class="journal-card__category">Style</p>
+            <h3 class="journal-card__title">Dressing Between Seasons</h3>
+            <p class="journal-card__excerpt">The art of layering and transitional dressing for India's shifting weather and moods.</p>
+            <span class="journal-card__read">
+              READ
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Featured Looks / Lookbook ═══ -->
+    <section class="lookbook section section--lg" id="lookbook">
+      <div class="container">
+        <div class="lookbook__header">
+          <p class="label section__label reveal">Campaign</p>
+          <h2 class="display-lg section__heading reveal reveal--delay-1">Featured Looks</h2>
+        </div>
+
+        <div class="lookbook__grid reveal">
+          <div class="look" role="button" tabindex="0" aria-label="View Look 01 in lightbox">
+            <img class="look__image" src="assets/images/hero-campaign.jpg" alt="Look 01 — AAVRA campaign" loading="lazy" decoding="async">
+            <span class="look__label">LOOK 01</span>
+          </div>
+          <div class="look" role="button" tabindex="0" aria-label="View Look 02 in lightbox">
+            <img class="look__image" src="assets/images/collection-quiet-form.jpg" alt="Look 02 — AAVRA campaign" loading="lazy" decoding="async">
+            <span class="look__label">LOOK 02</span>
+          </div>
+          <div class="look" role="button" tabindex="0" aria-label="View Look 03 in lightbox">
+            <img class="look__image" src="assets/images/collection-monsoon.jpg" alt="Look 03 — AAVRA campaign" loading="lazy" decoding="async">
+            <span class="look__label">LOOK 03</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Craftsmanship ═══ -->
+    <section class="craft section section--lg" id="craft">
+      <div class="container">
+        <div class="craft__inner">
+          <div class="craft__image-wrap reveal">
+            <img class="craft__image" src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&q=80" alt="Artisan hand-stitching detail — AAVRA craftsmanship" loading="lazy" decoding="async">
+          </div>
+          <div class="craft__content">
+            <p class="label craft__label reveal">Philosophy</p>
+            <h2 class="craft__heading reveal reveal--delay-1">Made Slow.<br>Designed to Last.</h2>
+            <p class="craft__text reveal reveal--delay-2">Every piece begins with material, proportion and patience. Traditional techniques meet contemporary construction to create clothing that feels considered in every detail — from the weight of the fabric to the fall of the hem.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ About ═══ -->
+    <section class="about section section--lg" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__left">
+            <p class="label about__label reveal">The Brand</p>
+            <h2 class="about__heading reveal reveal--delay-1">About AAVRA</h2>
+            <p class="about__text reveal reveal--delay-2">We are an independent Indian clothing label exploring the space between heritage and modernity. Our collections are built around thoughtful proportions, tactile fabrics and details that reveal themselves slowly.</p>
+            <p class="about__text reveal reveal--delay-3">Founded with the belief that clothing should feel as considered as it looks, AAVRA works with a small network of artisans across Rajasthan and Gujarat, combining their mastery with contemporary design to create pieces that belong in the modern wardrobe.</p>
+          </div>
+          <div class="about__right reveal reveal--delay-2">
+            <div class="about__meta">
+              <div class="about__meta-item">
+                <span class="label">Founded</span>
+                <p class="about__meta-value">2021</p>
+              </div>
+              <div class="about__meta-item">
+                <span class="label">Based in</span>
+                <p class="about__meta-value">Jaipur, India</p>
+              </div>
+              <div class="about__meta-item">
+                <span class="label">Philosophy</span>
+                <p class="about__meta-value">Less, but better</p>
+              </div>
+              <div class="about__meta-item">
+                <span class="label">Approach</span>
+                <p class="about__meta-value">Craft-first design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Campaign Statement ═══ -->
+    <section class="campaign-statement" id="campaign-statement">
+      <div class="campaign-statement__bg">
+        <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=1400&q=80" alt="AAVRA campaign — Indian fashion editorial" loading="lazy" decoding="async">
+      </div>
+      <div class="campaign-statement__overlay"></div>
+      <div class="campaign-statement__content reveal">
+        <h2 class="campaign-statement__heading">India, Reimagined<br>Through Clothing.</h2>
+      </div>
+    </section>
+
+    <!-- ═══ Experience / Private Styling ═══ -->
+    <section class="experience section section--lg" id="experience">
+      <div class="container">
+        <div class="experience__header">
+          <p class="label section__label reveal">Services</p>
+          <h2 class="display-lg section__heading reveal reveal--delay-1">The Experience</h2>
+        </div>
+
+        <div class="experience__grid">
+          <div class="experience-card reveal">
+            <div class="experience-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3 class="experience-card__title">Private Styling</h3>
+            <p class="experience-card__text">One-on-one styling sessions with our creative team. Discover pieces that resonate with your personal aesthetic.</p>
+            <button class="experience-card__btn" data-action="appointment">BOOK A SESSION</button>
+          </div>
+
+          <div class="experience-card reveal reveal--delay-1">
+            <div class="experience-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            </div>
+            <h3 class="experience-card__title">Personal Appointments</h3>
+            <p class="experience-card__text">Discover the collection privately at our Jaipur studio. An unhurried experience designed around you.</p>
+            <button class="experience-card__btn" data-action="appointment">REQUEST APPOINTMENT</button>
+          </div>
+
+          <div class="experience-card reveal reveal--delay-2">
+            <div class="experience-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/></svg>
+            </div>
+            <h3 class="experience-card__title">Curated Delivery</h3>
+            <p class="experience-card__text">Thoughtfully packaged pieces delivered to your door. Every detail considered, from tissue to thread.</p>
+            <button class="experience-card__btn" data-action="appointment">ENQUIRE</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Newsletter ═══ -->
+    <section class="newsletter section section--lg" id="newsletter">
+      <div class="container container--narrow">
+        <h2 class="newsletter__heading reveal">A Little Something<br>Before Everyone Else.</h2>
+        <p class="newsletter__text reveal reveal--delay-1">Join our private list for collection previews, editorial stories and invitations.</p>
+        <form class="newsletter__form reveal reveal--delay-2" id="newsletter-form">
+          <input type="email" class="newsletter__input" id="newsletter-email" placeholder="Your email address" aria-label="Email address" required>
+          <button type="submit" class="newsletter__submit">JOIN THE LIST</button>
+        </form>
+        <p class="newsletter__success" id="newsletter-success">THANK YOU — YOU'RE ON THE LIST.</p>
+        <p class="newsletter__error" id="newsletter-error"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <p class="footer__brand-name">AAVRA</p>
+          <p class="footer__brand-text">Contemporary Indian clothing. Rooted in craft, shaped for the modern wardrobe.</p>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__col-title">Explore</p>
+          <button class="footer__link" data-nav="collections">Collections</button>
+          <button class="footer__link" data-nav="journal">Journal</button>
+          <button class="footer__link" data-nav="about">About</button>
+          <button class="footer__link" data-nav="lookbook">Lookbook</button>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__col-title">Experience</p>
+          <button class="footer__link" data-action="appointment">Private Styling</button>
+          <button class="footer__link" data-action="appointment">Appointments</button>
+          <button class="footer__link" data-nav="newsletter">Contact</button>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__col-title">Follow</p>
+          <a href="#" class="footer__link" data-social="instagram">Instagram</a>
+          <a href="#" class="footer__link" data-social="pinterest">Pinterest</a>
+          <a href="#" class="footer__link" data-social="facebook">Facebook</a>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__col-title">Legal</p>
+          <button class="footer__link" data-legal="privacy">Privacy</button>
+          <button class="footer__link" data-legal="terms">Terms</button>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 AAVRA. All rights reserved.</p>
+        <button class="footer__back-top" id="back-to-top">BACK TO TOP ↑</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ Overlays ═══ -->
+
+  <!-- Search Overlay -->
+  <div class="overlay search-overlay" id="search-overlay" role="dialog" aria-label="Search" aria-modal="true">
+    <button class="search-overlay__close" id="search-close" aria-label="Close search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="search-overlay__input-wrap">
+      <input type="text" class="search-overlay__input" id="search-input" placeholder="Search..." aria-label="Search AAVRA" autocomplete="off">
+    </div>
+    <div class="search-results" id="search-results" role="listbox"></div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="overlay mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+    <button class="mobile-menu__close" id="mobile-menu-close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <button class="mobile-menu__link" data-target="collections">Collections</button>
+    <button class="mobile-menu__link" data-target="journal">Journal</button>
+    <button class="mobile-menu__link" data-target="lookbook">Lookbook</button>
+    <button class="mobile-menu__link" data-target="about">About</button>
+    <button class="mobile-menu__link" data-target="newsletter">Contact</button>
+  </div>
+
+  <!-- Collection Modal -->
+  <div class="overlay collection-modal" id="collection-modal" role="dialog" aria-label="Collection detail" aria-modal="true">
+    <button class="collection-modal__close" id="collection-modal-close" aria-label="Close collection">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="collection-modal__content">
+      <h2 class="collection-modal__title" id="collection-modal-title"></h2>
+      <p class="collection-modal__desc" id="collection-modal-desc"></p>
+      <div class="collection-modal__looks" id="collection-modal-looks"></div>
+    </div>
+  </div>
+
+  <!-- Article Modal -->
+  <div class="overlay article-modal" id="article-modal" role="dialog" aria-label="Article" aria-modal="true">
+    <button class="article-modal__close" id="article-modal-close" aria-label="Close article">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="article-modal__content">
+      <img class="article-modal__image" id="article-modal-image" src="" alt="">
+      <p class="article-modal__category" id="article-modal-category"></p>
+      <h2 class="article-modal__title" id="article-modal-title"></h2>
+      <div class="article-modal__body" id="article-modal-body"></div>
+      <nav class="article-modal__nav" aria-label="Article navigation">
+        <button class="article-modal__nav-btn" id="article-prev" aria-label="Previous article">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          PREVIOUS
+        </button>
+        <button class="article-modal__nav-btn" id="article-next" aria-label="Next article">
+          NEXT
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="overlay lightbox" id="lightbox" role="dialog" aria-label="Image lightbox" aria-modal="true">
+    <button class="lightbox__close" id="lightbox-close" aria-label="Close lightbox">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <button class="lightbox__prev" id="lightbox-prev" aria-label="Previous image">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    </button>
+    <img class="lightbox__image" id="lightbox-image" src="" alt="">
+    <button class="lightbox__next" id="lightbox-next" aria-label="Next image">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </button>
+    <p class="lightbox__counter" id="lightbox-counter"></p>
+  </div>
+
+  <!-- Appointment Modal -->
+  <div class="overlay appointment-modal" id="appointment-modal" role="dialog" aria-label="Request appointment" aria-modal="true">
+    <button class="appointment-modal__close" id="appointment-close" aria-label="Close appointment form">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="appointment-modal__content">
+      <h2 class="appointment-modal__title">Request an Appointment</h2>
+      <p class="appointment-modal__subtitle">We'd love to welcome you. Share your details and we'll be in touch.</p>
+      <form id="appointment-form">
+        <div class="form-group">
+          <label for="appt-name">Name</label>
+          <input type="text" id="appt-name" placeholder="Your full name" required>
+          <span class="error-msg">Please enter your name</span>
+        </div>
+        <div class="form-group">
+          <label for="appt-email">Email</label>
+          <input type="email" id="appt-email" placeholder="your@email.com" required>
+          <span class="error-msg">Please enter a valid email</span>
+        </div>
+        <div class="form-group">
+          <label for="appt-phone">Phone</label>
+          <input type="tel" id="appt-phone" placeholder="+91 ..." required>
+          <span class="error-msg">Please enter your phone number</span>
+        </div>
+        <div class="form-group">
+          <label for="appt-date">Preferred Date</label>
+          <input type="date" id="appt-date">
+        </div>
+        <div class="form-group">
+          <label for="appt-message">Message</label>
+          <textarea id="appt-message" rows="3" placeholder="Anything you'd like us to know..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--filled">
+          <span>REQUEST APPOINTMENT</span>
+        </button>
+      </form>
+      <div class="appointment-modal__success" id="appointment-success">
+        <h3>Thank You</h3>
+        <p>Your request has been received. We'll be in touch shortly to confirm your appointment.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Legal Modal -->
+  <div class="overlay legal-modal" id="legal-modal" role="dialog" aria-label="Legal information" aria-modal="true">
+    <button class="legal-modal__close" id="legal-close" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="legal-modal__content">
+      <h2 class="legal-modal__title" id="legal-title"></h2>
+      <div class="legal-modal__body" id="legal-body"></div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
